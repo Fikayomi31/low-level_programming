@@ -11,7 +11,7 @@ int main(void)
 {
 	int i;
 
-	/* number from 0 to 10 */
+	/* number from 0 to base 10 */
 	for (i = 0; i < 10; i++)
 		printf("%d", i);
 	printf("\n");

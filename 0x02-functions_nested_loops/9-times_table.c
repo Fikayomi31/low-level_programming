@@ -1,8 +1,9 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * time_table - prints the 9 times table, starting
  * with 0.
- * Return: nothing
+ * Return:  0 nothing
  */
 void times_table(void)
 {
@@ -11,7 +12,7 @@ void times_table(void)
 	int c; /* columns */
 	int m; /* multiple */
 
-	for (r = 0; r <= t; r++) /* i.e 9 x the row */
+	for (r = 0; r <= t; r++) /* i.e 9 row */
 	{
 		/* multiple row with column */
 		m = r * c;
@@ -30,4 +31,10 @@ void times_table(void)
 		}
 	}
 	_putchar('\n');
+}
+
+int main(void)
+{
+	times_table();
+	return (0);
 }

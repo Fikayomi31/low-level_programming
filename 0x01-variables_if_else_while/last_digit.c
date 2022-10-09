@@ -1,17 +1,16 @@
 #include <stdio.h>
 #include <time.h>
 /**
- * main - print the last digit of the random
+ * main - random value to @n each time it is executed
+ * @n: The variable
  *
- * Description: number stored in the variable n
- *
- * Return: 0 (success)
+ * Return: 0;
  */
 int main(void)
 {
 	int n, last;
-
-	strand(time(0));
+	
+	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	last = n % 10; /* getting the last digit of 'last' */
 
@@ -25,7 +24,8 @@ int main(void)
 	}
 	else if (last < 6 && last != 0)
 	{
-		printf("last digit of %d is %d and less than 6 and not0\n", n, last);
+		printf("last digit of %d is %d and is less than 6 and not 0\n", n, last);
 	}
 	return (0);
 }
+	

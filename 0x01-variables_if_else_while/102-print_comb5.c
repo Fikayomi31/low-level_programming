@@ -9,39 +9,40 @@
  */
 int main(void)
 {
-	int a, b, c, d;
+	int i, j, k, m;
 
-	for (a = 48; a < 58; a++)
+	i = 48;
+	while (i < 58)
 	{
-		for (b = 48; b < 58; b++)
+		j = 48;
+		while (j < 58)
 		{
-			for (c = 48; c < 58; c++)
+		
+			k = i;
+			while (k < 58)
 			{
-				for (d = 48; d < 58; d++)
+				m = j + i;
+				while (m < 58)
 				{
-					if (((c + d) > (a + b) && c >= a) || a < c)
+					putchar(i);
+					putchar(j);
+					putchar(32);
+					putchar(k);
+					putchar(m);
+					if (i < 57 || j < 56 || k < 57 || m < 57)
 					{
-						putchar(a);
-						putchar(b);
+						putchar(44);
 						putchar(32);
-						putchar(c);
-						putchar(d);
-
-					/* condition for , and space */
-					if (a + b + c + d == 227 && a == 57) /* addtion of abcd */
-					{
-						break;
 					}
-					else
-					{
-						putchar(44); /* ASCII for , */
-						putchar(32); /* ASCII for space */
-					}
-					}
+					m++;
 				}
+				m = 48;
+				k++;
 			}
+			j++;
 		}
+		i++;
 	}
-	putchar ('\n');
+	putchar(10);
 	return (0);
 }

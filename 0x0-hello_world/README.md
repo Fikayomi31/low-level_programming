@@ -3,4 +3,5 @@
 1. Writing a script that compiles a C file but does not link
 2. Script that generate assembly code for C code and save it in an output file
 3. Script that compiles a C file and creates an executable file name cisfun
-
+4. C program that prints exactly Programming is like building a multilingual puzzle followed by new line.
+5. 

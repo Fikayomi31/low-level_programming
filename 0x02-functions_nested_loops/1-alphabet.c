@@ -6,7 +6,7 @@
  *
  * Return: Alway 0
  */
-int main(void)
+void print_alphabet(void)
 {
 	char i;
 	char ch;
@@ -22,5 +22,4 @@ int main(void)
 		
 	}
 	putchar('\n');
-	return (0);
 }

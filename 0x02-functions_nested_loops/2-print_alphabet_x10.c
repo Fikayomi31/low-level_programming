@@ -1,12 +1,12 @@
 #include <stdio.h>
 
-/* main - Entry point
+/* print_alphabet: print 10 times the alphabet in lowercase
  *
  * Description: 10 times the alphabet in lowercase
  *
  * Return: Alway 0
  */
-int main(void)
+voidbprint_alphabet_x10(void)
 {
 	char c;
 	int i;
@@ -17,5 +17,5 @@ int main(void)
 		putchar('\n');
 	}
 	
-	return (0);
+	
 }

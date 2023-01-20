@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
+#include <stdlib.h>
 
 void print_alphabet(void);
 int _putchar(char c);
@@ -13,5 +14,6 @@ int _isalpha(int c);
 int _islower2(int c);
 int _isalpha2(int c);
 int print_sign(int n);
+int _abs(int n);
 
 #endif /*MAIN_H*/

@@ -15,5 +15,6 @@ int _islower2(int c);
 int _isalpha2(int c);
 int print_sign(int n);
 int _abs(int n);
+int print_last_digit(int n);
 
 #endif /*MAIN_H*/

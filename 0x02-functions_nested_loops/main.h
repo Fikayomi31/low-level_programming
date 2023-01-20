@@ -12,6 +12,6 @@ int _islower(int c);
 int _isalpha(int c);
 int _islower2(int c);
 int _isalpha2(int c);
-
+int print_sign(int n);
 
 #endif /*MAIN_H*/

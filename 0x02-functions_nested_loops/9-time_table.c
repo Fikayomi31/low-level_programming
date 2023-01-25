@@ -25,19 +25,11 @@ void times_table(void)
 				_putchar(' ');
 				_putchar(48 + k);
 			}
-			else if (k >= 10) /* ifbk is 2 or more digit */
+			else if (k >= 10) /* if k is 2 or more digit */
 			{
 				_putchar(',');
 				_putchar(' ');
 				_putchar(48 + (k / 10));
-				_putchar(48 + (k % 10));
-			}
-			else if (k > 99)
-			{
-				_putchar(',');
-				_putchar(' ');
-				_putchar(48 + (k / 100));
-				_putchar(48 + ((k /10) % 10)); 
 				_putchar(48 + (k % 10));
 			}
 

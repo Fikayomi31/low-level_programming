@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_times_table - function that print the n times table
- * starting from 0
+ * starting from 0 and not more than 15
  * @n: time table to use
  *
  * Return: void

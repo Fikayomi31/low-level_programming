@@ -8,13 +8,13 @@
 
 int main(void)
 {
-	int i = 0;
+	int count = 0; /*variabke for counting */
 	long int a = 1, b = 2, next;
 	
-	printf("%lu, ", a);
-	while (i < 50)
+	printf("%lu, ", a); /*printing the first digit */
+	while (count <= 50)
 	{
-		if (i == 50)
+		if (count == 50)
 		{
 			printf("%lu\n", b);
 		}
@@ -22,10 +22,10 @@ int main(void)
 		{
 			printf("%lu, ", a);
 		}
-		next = b;
-		b += a;
+		next = b; /*casting b into next varaiable */
+		b += a; /*adding b and a */
 		a = next;
-		i++;
+		count++;
 	}
 	putchar('\n');
 	return (0);

@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 
-voidbpositivr_or_mnegative(int i);
+void positive_or_negative(int i);
 
 
 #endif /* MAIN_H */

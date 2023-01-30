@@ -10,7 +10,8 @@
 void print_most_numbers(void)
 {
 	char c;
-
+	
+	/* Using Ascii value */
 	c = 48;
 	while (c < 58)
 	{

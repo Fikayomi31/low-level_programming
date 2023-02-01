@@ -15,7 +15,8 @@ void print_triangle(int size)
 		 
 		for (j = 0; j <= size; j++)
 		{
-			if (j + i <= size)
+			/* printing space first */
+			if (j + i <= size) /* j + i can never be = size so to print space */
 				_putchar(' ');
 			else
 				_putchar('#');

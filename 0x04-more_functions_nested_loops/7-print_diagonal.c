@@ -20,7 +20,10 @@ void print_diagonal(int n)
 		/* loopimg i through n for the row for the \ */
 		for (i =0; i < n; i++)
 		{
-			/* nested looping of j through n for colume for next \ */
+			/* nested looping of j through n for colume for next \ 
+			 * which will printed on next but followed a diagonal way
+			 * of printing
+			 */
 			for (j = 0; j < n; j++)
 			{
 				if (j == i)

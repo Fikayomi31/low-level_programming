@@ -17,9 +17,10 @@ void print_diagonal(int n)
 	}
 	else
 	{
-		/* loopimg i through n for the row is will the \ */
+		/* loopimg i through n for the row for the \ */
 		for (i =0; i < n; i++)
 		{
+			/* nested looping of j through n for colume for next \ */
 			for (j = 0; j < n; j++)
 			{
 				if (j == i)

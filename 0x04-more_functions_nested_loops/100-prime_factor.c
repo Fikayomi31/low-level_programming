@@ -14,10 +14,13 @@ int main(void)
 	long c;
 	long num = 612852475143;
 
+	/* Looping through num of which start on 2 */
 	for (c = 2; c < num; c++)
 	{
+		/* Checking for prime number */
 		while (num % c == 0)
 		{
+			/* checking for largest prime number ie when num is longer divible by c*/
 			num = num / c;
 		}
 	}
@@ -26,4 +29,6 @@ int main(void)
 
 	return (0);
 
+
 }
+

@@ -1,12 +1,14 @@
 #include <stdio.h>
 
 /*
- * reset_to 98 - pointer to an interger
+ * reset_to_98 - pointer to an interger
  * @n: the pointer
  *
  * Return: void
  */
-.void reset_to_98(int *n)
+
+void reset_to_98(int *n)
 {
-	n = 98;
+	*n = 98;
 }
+

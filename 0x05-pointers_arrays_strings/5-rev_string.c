@@ -13,7 +13,7 @@ void rev_string(char *s)
 	int i;
 	char temp;
 	
-	/* looping through the len of the string / 2 to rev the string */
+	/* looping through the len of the string / 2 to rev half, the other half will rev */
 	for (i = 0; i < len / 2; i++)
 	{
 		temp = s[i]; /* storing the rev string in temp */

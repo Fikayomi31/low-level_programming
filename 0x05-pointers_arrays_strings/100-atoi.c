@@ -9,20 +9,25 @@
 
 int _atoi(char *s)
 {
-	int sign = 1;
-	unsigned int num = 0;
-	
+	short int m = 1; /* negative or positive multiplier */
+	char *str = "";
+	unsigned int i;
 
-	do 
+	while (*s != '\0')
 	{
 		if (*s == '-')
-			sign *= -1;
-		else if (*s >= '0' && *s <= '9')
-			num = (num + 10) + (*s - '0');
-		else if (num > 0)
+			m *= -1;
+		else if (*s == '+')
+			m *= +1;
+		else if (isdigit(*s))
+		{
+			str = s;
 			break;
-	} 
-	while (*s++);
-
-	return (num + sign);
+		}
+		s += 1;
+	}
+	i = atoi(str);
+	if (i == 0)
+		return (0);
+	return (i * m);
 }

@@ -12,17 +12,20 @@ int _atoi1(char *s)
 	unsigned int num = 0;
 
 	do {
-		/* checking for sign */
+		/* checking for - sign */
 		if (*s == '-')
 			sign *= -1;
-		/* checking it start with digit */
+
+		/* checking if it start with digit */
 		else if (*s >= '0' && *s <= '9')
-			/* updating the digit */
+			/* updating the digit if it more 1 digit*/
 			num = (num * 10) + (*s - '0');
+
 		/* ignoring if the string is not number */
 		else if (num > 0)
 			break;
 	}
+	/* looging through the string */
 	while (*s++);
 
 	return (num * sign);

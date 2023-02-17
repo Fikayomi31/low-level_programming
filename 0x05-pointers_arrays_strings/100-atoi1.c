@@ -6,19 +6,50 @@
  *Return: The integer value of the comverted string.
  */
 
-int _atoi(char *s)
+int _atoi(char *str)
 {
-	int sign = 1;
-	unsigned int num = 0;
+	// Initialize result
 
-	do {
-		if (*s == '-')
-			sign *= -1;
-		else if (*s >= '0' && *s <= '9')
-			num = (num * 10) + (*s - '0');
-		else if (num > 0)
-			break;
-	} while (*s++);
+	int res = 0;
+ 
 
-	return (num * sign);
+	// Initialize sign as positive
+
+    	int sign = 1;
+ 
+
+    	// Initialize index of first digit
+
+    	int i = 0;
+ 
+
+    	// If number is negative,
+
+    	// then update sign
+
+    	if (str[0] == '-') 
+	{
+
+        	sign = -1;
+ 
+
+        // Also update index of first digit
+
+        i++;
+
+    	}
+ 
+
+    	// Iterate through all digits
+
+    	// and update the result
+
+    	for (; str[i] != '\0'; i++)
+
+        	res = res * 10 + str[i] - '0';
+ 
+
+    	// Return result with sign
+
+    	return sign * res;
 }

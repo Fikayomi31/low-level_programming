@@ -26,6 +26,7 @@ void print_number(int n)
 	}
 	else
 	{
+		/* function call itself when num is > 10 */
 		print_number(num / 10);
 		_putchar('0' + (num % 10));
 	}

@@ -13,6 +13,7 @@ char *_strchr(char *s, char c)
 	int i = 0;
 	int length;
 
+
 	/* looping for the length of the string */
 	for (length = 0; s[length]; length++)
 		continue;

@@ -26,12 +26,14 @@ int _sqrt_recursion(int n)
 
 int sqrt_function(int n, int sqt)
 {
+	/* ie sqt * sqt is n automatical it is square root */
 	if (n == sqt * sqt)
 	{
 		return (sqt);
 	}
 	else if (sqt < n)
 	{
+		/* perform recursion until it = n */
 		return (sqrt_function(n, ++sqt));
 	}
 	else

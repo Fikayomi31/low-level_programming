@@ -3,8 +3,8 @@
 
 /**
  * main - print the program new name without compiling it again
- * @argc: integer argument
- * @argv: string argument
+ * @argc: number of argument
+ * @argv: array of  argument pass
  *
  * Return: Always 0
  */

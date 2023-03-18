@@ -3,8 +3,8 @@
 
 /**
  * main - print number of argument pass
- * @argc: the integer agrument
- * @argv: the string argument
+ * @argc: the number of agrument
+ * @argv: the array of  argument pass
  *
  * Return: Always 0
  */

@@ -16,12 +16,14 @@ char *str_concat(char *s1, char *s2)
 	if (s1 == 0 && s2 == 0)
 		return (NULL);
 
-	for (i = 0; s1[i] && s2[2]; i++)
+	/* looping throught both string so that to allocate memory */
+	for (i = 0; s1[i] && s2[i]; i++)
 		;
 	str = malloc(i * sizeof(*str) + 1);
 	
 	if (str == 0)
 		return (NULL);
+	/* strcat to join both string */
 	strcat(str, s1);
 	strcat(str, s2);
 	return (str);

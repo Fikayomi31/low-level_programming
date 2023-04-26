@@ -20,8 +20,8 @@ char *argstostr(int ac, int **av)
 	length = 0;
 	for (i = 0; i < ac; i++)
 	{
-		/* add 1 for newline */
-		length += strlen(av[i]) + 1;
+		for (j = 0; av[i][j]; i++)
+			length++;
 	}
 
 	/*allocate the memory for conactenates string */

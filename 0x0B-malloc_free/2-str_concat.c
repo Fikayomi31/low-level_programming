@@ -23,8 +23,10 @@ char *str_concat(char *s1, char *s2)
 	
 	if (str == 0)
 		return (NULL);
+
 	/* strcat to join both string */
 	strcat(str, s1);
 	strcat(str, s2);
+	 
 	return (str);
 }

@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	char *s, *str;
+	char *s, *str, *new_str;
 
 	s = _strdup("ALX SE");
 	if (s == NULL)
@@ -26,5 +26,14 @@ int main(void)
 	}
 	printf("%s\n", str);
 	free(str);
+
+	new_str = _strdup("Never give up");
+	if (new_str == NULL)
+	{
+		printf("failed to allocate memory\n");
+		return (1);
+	}
+	printf("%s\n", new_str);
+	free(new_str);
 	return (0);
 }

@@ -11,7 +11,7 @@
 char *create_array(unsigned int size, char c)
 {
 	char *array;
-	unsigned int i;
+	/* unsigned int i;*/
 	
 	/* checking if size is 0 */	
 	if (size == 0)
@@ -24,7 +24,7 @@ char *create_array(unsigned int size, char c)
 		return (0);
 
 	/* looping throught the array of allocated memory */
-	for (i = 0; i < size; i++)
-		array[i] = c;
+	/* for (i = 0; i < size; i++) */
+	/*	array[i] = c;*/
 	return (array);
 }

@@ -2,12 +2,14 @@
 #include <stdlib.h>
 #include <string.h>
 
+
 /**
  * argstostr - concatenates all argument
  * @ac: agrument count
  * @av: double pointer array of string pass to main
  * Return: Null if it fail or pointer to the new string
  */
+
 char *argstostr(int ac, int **av)
 {
 	int length, i, j;

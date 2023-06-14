@@ -27,7 +27,7 @@ int _strlen(char *string)
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *alloc;
-	int len, num;
+	int len, num, i, j;
 	num = n;
 
 	if (s1 == NULL || s2 == NULL)
@@ -42,11 +42,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	if (alloc == 0)
 		return (NULL);
-	
-	strcpy(alloc, s1);
-
-	strncpy(alloc, s2, n);
+	for (i = 0; s1[i] != '\0'; i++)
+		alloc[i] = s1[i];
+	for (j = 0; j < num; j++)
+		alloc[i + j] = s2[j];
+	alloc[i + j] = '\0';
 
 	return (alloc);
-	free(alloc);
 }

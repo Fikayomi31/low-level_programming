@@ -42,9 +42,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	if (alloc == 0)
 		return (NULL);
-	for (i = 0; s1[i] != '\0'; i++)
+	/* looping through s1 and copying it into alloc */
+	for (i = 0; s1[i]; i++)
 		alloc[i] = s1[i];
+	/* looping the n bytes of s2 and joining it with alloc */
 	for (j = 0; j < num; j++)
+		/* looping above + j */
 		alloc[i + j] = s2[j];
 	alloc[i + j] = '\0';
 

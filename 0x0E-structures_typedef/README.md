@@ -8,7 +8,7 @@
 * [0x0d. Typeded and structure.pdf](https://intranet.alxswe.com/rltoken/TGQ3RopVP7CjUTzF-XDXUw)
 * [typedef](https://intranet.alxswe.com/rltoken/aqqM2t7PLG5cyHaKwm5nBg)
 * Programming in C by Stephen Kochan - Chapter 8, Working with Structures p163-18
-* [The Lost Art of C Structure Packing](The Lost Art of C Structure Packing)  (Advanced - not mandatory)
+* [The Lost Art of C structure](https://intranet.alxswe.com/rltoken/emb4ohNT7XKi8Peep5lyeA) (Advanced - not mandatory)
 
 # Learning Objectives
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google
